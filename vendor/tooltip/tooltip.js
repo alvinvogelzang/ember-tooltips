@@ -1027,12 +1027,12 @@ Tooltip.prototype.hide = function () {\n\
 \t}\n\
 \n\
 \t// Remove the tip from the DOM when transition is done\n\
-\tclearTimeout(this.aIndex);\n\
-\tthis.aIndex = setTimeout(function () {\n\
-\t\tself.aIndex = 0;\n\
-\t\tbody.removeChild(self.element);\n\
-\t\tself.hidden = 1;\n\
-\t}, duration);\n\
+\t\n\
+\t\n\
+\t\tthis.aIndex = 0;\n\
+\t\tbody.removeChild(this.element);\n\
+\t\tthis.hidden = 1;\n\
+\t\n\
 \n\
 \treturn this;\n\
 };\n\
